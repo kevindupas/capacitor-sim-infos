@@ -13,24 +13,20 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`getOperatorAndNetworkType()`](#getoperatorandnetworktype)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### getOperatorAndNetworkType()
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+getOperatorAndNetworkType() => Promise<{ operatorName: string; networkType: string; }>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
-
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ operatorName: string; networkType: string; }&gt;</code>
 
 --------------------
 

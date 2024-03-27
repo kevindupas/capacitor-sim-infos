@@ -6,8 +6,10 @@ export class SimInformationsWeb
   extends WebPlugin
   implements SimInformationsPlugin
 {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+  // Dans web.ts
+  async getOperatorAndNetworkType(): Promise<{ operatorName: string; networkType: string }> {
+    console.warn("SimInformations functionality not available on web.");
+    return { operatorName: "Unknown", networkType: "Unknown" };
   }
+
 }
